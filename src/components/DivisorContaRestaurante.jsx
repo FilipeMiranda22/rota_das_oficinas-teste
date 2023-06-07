@@ -188,8 +188,8 @@ function DivisorContaRestaurante() {
                                 />
                                 </div>
                                 <div className="col-auto">
-                                <button className="btn btn-primary" onClick={addClient}>
-                                  <i class="bi bi-plus"></i> CLIENTE
+                                <button title="Adicionar Cliente" className="btn btn-primary" onClick={addClient}>
+                                  <i className="bi bi-plus"></i> CLIENTE
                                 </button>
                                 </div>
                             </div>
@@ -217,14 +217,15 @@ function DivisorContaRestaurante() {
                                       e.preventDefault();
                                   }}}
                               min="0"
-                              placeholder="R$ 0,00"            
+                              placeholder="R$ 0,00"
+                              value={productPrice}            
                               onValueChange={(values) => {
                                   const { floatValue } = values;
                                   setProductPrice(floatValue);
                               }}
                           />
-                            <button className="btn btn-primary mt-3 w-100"type="button" onClick={addProduct}>
-                              <i class="bi bi-plus"></i> Produto
+                            <button title="Adicionar Produto" className="btn btn-primary mt-3 w-100"type="button" onClick={addProduct}>
+                              <i className="bi bi-plus"></i> Produto
                             </button>
                         </div>
                         <div className="form-group text-start py-2">
@@ -292,12 +293,12 @@ function DivisorContaRestaurante() {
                         <div className="row mt-3">
                           <div className="col">
                             <button type="button" className="btn btn-primary w-100" onClick={associateProductToClient}>
-                              <i class="bi bi-link-45deg"></i> Associar Produto ao Cliente
+                              <i className="bi bi-link-45deg"></i> Associar Produto ao Cliente
                             </button>
                           </div>
                         </div>
                       </div>
-                      <button className="btn btn-success mt-3" type="submit"><i class="bi bi-calculator-fill"></i> Calcular</button>
+                      <button className="btn btn-success mt-3" type="submit"><i className="bi bi-calculator-fill"></i> Calcular</button>
                     </form>
                 </div> 
             </div>
@@ -331,7 +332,7 @@ function DivisorContaRestaurante() {
                     </ul>
                     </div>
                     <button className="btn btn-primary mt-auto w-100" type="button" onClick={handleShowModal}>
-                      <i class="bi bi-pencil-square"></i> DETALHES
+                      <i className="bi bi-pencil-square"></i> DETALHES
                     </button>
                 </div>
             </div>

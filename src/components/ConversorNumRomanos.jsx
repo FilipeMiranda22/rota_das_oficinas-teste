@@ -101,7 +101,7 @@ function ConversorNumRomanos() {
                 <div className="card-body mt-2 mx-2">
                     <h5 className="card-title text-center">CONVERSOR</h5>
                     <form className="d-flex flex-column">
-                        <div class="form-group text-start py-3">
+                        <div className="form-group text-start py-3">
                             <label htmlFor="numero" className="py-2">Número (Arábico ou Romano)</label>
                             <input 
                                 type="text" 
@@ -112,11 +112,11 @@ function ConversorNumRomanos() {
                                 pattern="[1-9]|[1-9][0-9]{1,3}|[1-3][0-9]{3}"
                             />                           
                         </div>
-                        <div class="form-group  py-2">
+                        <div className="form-group  py-2">
                             <label htmlFor="resposta" className="py-2 text-start">Resposta:</label>
                             <div className="text-center" style={{ minHeight: '4rem', fontSize: '16px'}}>{conversionResult}</div>
                         </div>
-                        <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Converter</button>
+                        <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Converter</button>
                     </form>
                 </div>
             </div>

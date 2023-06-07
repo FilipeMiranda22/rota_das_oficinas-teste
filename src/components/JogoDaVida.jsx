@@ -136,18 +136,18 @@ const JogoDaVida = () => {
     <>
       <div className="d-flex flex-column align-items-center mt-5 ">
         <h3 style={{ color: '#FFF' }}>Geração: {generation}</h3>
-        <div className="grid-container d-flex flex-wrap" style={{ width: '65%' }}>
+        <div className="grid-container d-flex flex-wrap" style={{ width: '54rem', height: "25rem" }}>
           {renderGrid()}
         </div>
       </div>
       <div className="d-flex justify-content-center ">
         {isPlaying ? (
           <button className="btn btn-danger mt-3 me-3" onClick={handlePause}>
-            <i title="Pausar" class="bi bi-pause-fill"></i>
+            <i title="Pausar" className="bi bi-pause-fill"></i>
           </button>
         ) : (
           <button className="btn btn-success mt-3 me-3" onClick={handlePlay}>
-            <i title="Jogar" class="bi bi-play-fill"></i>
+            <i title="Jogar" className="bi bi-play-fill"></i>
           </button>
         )}
         <button className="btn btn-primary mt-3" onClick={handleReset}>
