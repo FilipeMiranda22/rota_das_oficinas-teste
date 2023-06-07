@@ -1,0 +1,17 @@
+.header-modal {
+    color: #f0ffffde;
+    background: #1c1c1c;
+    border-bottom: #313131 !important;
+    flex-direction: row-reverse;
+}
+
+.body-modal {
+    color: #f0ffffde;
+    background: #2d2e2c;
+    padding: 10px 20px 20px 20px !important;
+}
+
+.footer-modal {
+    background: #1c1c1c !important;
+    border-top: #313131 !important;
+}
